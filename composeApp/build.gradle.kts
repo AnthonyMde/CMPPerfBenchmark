@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -33,6 +32,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation("jp.wasabeef:takt:2.1.1")
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -51,6 +51,9 @@ kotlin {
 }
 
 android {
+    lint {
+        disable.add("NullSafeMutableLiveData")
+    }
     namespace = "com.bc.cmpperfbenchmark"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
@@ -68,7 +71,9 @@ android {
     }
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isDebuggable = false
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
