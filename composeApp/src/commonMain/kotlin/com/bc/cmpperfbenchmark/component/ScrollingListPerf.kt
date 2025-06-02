@@ -13,9 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.unit.dp
 import cmpperfbenchmark.composeapp.generated.resources.Res
-import coil3.compose.AsyncImage
+//import coil3.compose.AsyncImage
 import com.bc.cmpperfbenchmark.anim.infiniteRotatingAnim
-//import com.github.panpf.sketch.AsyncImage
+import com.github.panpf.sketch.AsyncImage
 import org.jetbrains.compose.resources.DrawableResource
 
 @Composable
@@ -56,7 +56,7 @@ private fun RotatingImage(
 ) {
     Box(modifier = Modifier.size(50.dp)) {
         AsyncImage(
-            model = Res.getUri(imagePath),
+            uri = Res.getUri(imagePath),
             contentDescription = null,
             modifier = Modifier
                 .size(50.dp)
