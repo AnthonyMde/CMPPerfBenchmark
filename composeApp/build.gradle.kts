@@ -34,12 +34,12 @@ kotlin {
             implementation("jp.wasabeef:takt:2.1.1")
         }
         commonMain.dependencies {
-            implementation("io.github.panpf.sketch4:sketch-http:4.1.0")
-            implementation("io.github.panpf.sketch4:sketch-compose:4.1.0")
-            implementation("io.github.panpf.sketch4:sketch-compose-resources:4.1.0")
-            implementation("io.github.panpf.sketch4:sketch-extensions-compose:4.1.0")
-            implementation("io.github.panpf.sketch4:sketch-extensions-compose-resources:4.1.0")
-//            implementation("io.coil-kt.coil3:coil-compose:3.2.0")
+//            implementation("io.github.panpf.sketch4:sketch-http:4.1.0")
+//            implementation("io.github.panpf.sketch4:sketch-compose:4.1.0")
+//            implementation("io.github.panpf.sketch4:sketch-compose-resources:4.1.0")
+//            implementation("io.github.panpf.sketch4:sketch-extensions-compose:4.1.0")
+//            implementation("io.github.panpf.sketch4:sketch-extensions-compose-resources:4.1.0")
+            implementation("io.coil-kt.coil3:coil-compose:3.2.0")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
