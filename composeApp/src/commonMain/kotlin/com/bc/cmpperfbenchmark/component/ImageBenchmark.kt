@@ -1,4 +1,4 @@
-package com.bc.cmpperfbenchmark
+package com.bc.cmpperfbenchmark.component
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.animateFloat
