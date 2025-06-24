@@ -34,6 +34,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.bc.cmpperfbenchmark.component.ImageBenchmark
 import kotlinx.coroutines.delay
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import kotlin.math.cos
@@ -56,9 +57,9 @@ fun App() {
                 .background(Color.White),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-//            ImageBenchmark()
+            ImageBenchmark()
 //            TextBenchmark()
-            GridViewBenchmark()
+//            GridViewBenchmark()
         }
     }
 }
